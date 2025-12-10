@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Inter:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Inter:wght@400;500;600&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
@@ -41,9 +41,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  
+
   /* Wedding Theme Colors */
-  --red-thread: #DC143C;
+  --red-thread: #dc143c;
   --red-thread-light: rgba(220, 20, 60, 0.1);
   --silk-white: #fefdfb;
   --golden-hour: #f9f6f1;
@@ -137,7 +137,7 @@
     @apply bg-background text-foreground;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: var(--silk-white);
   }
 }
@@ -146,7 +146,7 @@
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */
 @layer base {
-  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
     h1 {
       font-size: var(--text-2xl);
       font-weight: var(--font-weight-medium);
@@ -204,16 +204,17 @@ html {
 
 /* Ephesis font class */
 .font-ephesis {
-  font-family: 'Ephesis', cursive;
+  font-family: "Ephesis", cursive;
 }
 
 /* Custom animations */
 @keyframes heartbeat {
-  0%, 100% { 
+  0%,
+  100% {
     transform: scale(1);
     opacity: 1;
   }
-  50% { 
+  50% {
     transform: scale(1.005);
     opacity: 0.98;
   }
@@ -289,7 +290,7 @@ html {
 
 /* Film grain effect */
 .film-grain::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -302,12 +303,31 @@ html {
 
 /* Paper texture */
 .paper-texture {
-  background-image: 
-    repeating-linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.01) 0px,
-      transparent 1px,
-      transparent 2px,
-      rgba(0, 0, 0, 0.01) 3px
-    );
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.01) 0px,
+    transparent 1px,
+    transparent 2px,
+    rgba(0, 0, 0, 0.01) 3px
+  );
+}
+@keyframes petal-fall-simple {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-petal-fall-simple {
+  animation: petal-fall-simple linear infinite;
 }
