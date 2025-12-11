@@ -127,7 +127,7 @@ export function MusicControl() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 2, duration: 0.5 }}
-        className="fixed bottom-6 right-6 z-30"
+        className="fixed bottom-20 right-6 z-30"
       >
         <motion.button
           onClick={toggleMusic}

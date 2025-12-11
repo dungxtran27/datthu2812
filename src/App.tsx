@@ -46,7 +46,7 @@ export default function App() {
         title: "Tiệc Cưới Nhà Gái",
         subtitle: "Tại Gia Đình Nhà Gái",
         address: "Thôn Phượng Hoàng- xã Cẩm Giang- Thành phố Hải Phòng",
-        time: "14:30",
+        time: "8:00",
         date: "28/12/2025",
         mapUrl: "https://maps.app.goo.gl/GBjVxVin4P3CD4K2A",
       },

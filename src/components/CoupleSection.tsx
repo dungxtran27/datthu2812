@@ -48,7 +48,7 @@ export function CoupleSection({
           className="text-center mb-16"
         >
           <h2 className="font-ephesis text-5xl md:text-6xl text-[var(--red-thread)] mb-4">
-            Câu chuyện của chúng mình
+            Tình yêu với chúng mình là
           </h2>
           <div className="w-24 h-0.5 bg-[var(--red-thread)] mx-auto" />
         </motion.div>

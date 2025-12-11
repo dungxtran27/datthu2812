@@ -32,16 +32,14 @@ export function LocationSection({
     location: Location;
     delay: number;
   }) => {
-    const [sealBroken, setSealBroken] = useState(false);
 
     return (
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay, duration: 0.8 }}
-        onHoverStart={() => setHoveredCard(location.title)}
-        onHoverEnd={() => setHoveredCard(null)}
-        className="relative"
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      whileHover={{ y: -5 }}
+      transition={{ delay, duration: 0.8 }}
+      className="relative"
       >
         {/* Ticket/Card */}
         <div className="relative bg-white rounded-lg shadow-[0_10px_40px_var(--paper-shadow)] overflow-hidden paper-texture">
