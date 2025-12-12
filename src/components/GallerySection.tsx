@@ -119,7 +119,7 @@ export function GallerySection({ images }: GallerySectionProps) {
                 </div>
 
                 {/* Photo with Polaroid effect */}
-                <div className="bg-white p-3 shadow-[0_8px_30px_var(--paper-shadow)] hover:shadow-[0_15px_50px_var(--paper-shadow)] transition-shadow duration-300">
+                <div className="bg-white p-2 shadow-[0_8px_30px_var(--paper-shadow)] hover:shadow-[0_15px_50px_var(--paper-shadow)] transition-shadow duration-300">
                   <div className="relative aspect-square overflow-hidden film-grain">
                     <img
                       src={image.src}
