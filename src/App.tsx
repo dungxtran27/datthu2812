@@ -53,48 +53,48 @@ export default function App() {
     },
     gallery: [
       {
-        src: "../asset/album_030523.jpg",
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551289/album_030523_egz2t4.jpg",
         date: "03/05/2023",
       },
       {
-        src: "../asset/220923.jpg",
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551288/220923_ges7qs.jpg",
         date: "22/09/2023",
       },
       {
-        src: "../asset/071223.jpg",
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551285/071223_nlhsin.jpg",
         date: "07/12/2023",
       },
       {
-        src: "../asset/album_090224.jpg",
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551288/album_090224_brc0cm.jpg",
         date: "09/02/2024",
       },
       {
-        src: "../asset/080324.jpg",
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551285/080324_opew6r.jpg",
         date: "08/03/2024",
       },
       {
-        src: "../asset/190524.jpg",
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551286/190524_f6zfpt.jpg",
         date: "19/05/2024",
       },
       {
-        src: "../asset/290724.jpg",
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551287/290724_pz5wxo.jpg",
         date: "29/07/2024",
       },
       {
-        src: "../asset/280125.jpg",
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551287/280125_svac2i.jpg",
         date: "28/01/2025",
       },
       {
-        src: "../asset/1401525.jpg",
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551286/1401525_fqnqkt.jpg",
         date: "14/05/2025",
       },
 
       {
-        src: "../asset/280925.jpg",
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551286/280925_anzywa.jpg",
         date: "28/09/2025",
       },
       {
-        src: "../asset/281225.jpg",
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551288/281225_nfljks.jpg",
         date: "28/12/2025",
       },
     ],
