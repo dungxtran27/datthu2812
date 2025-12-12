@@ -82,7 +82,7 @@ export default function App() {
       },
       {
         src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551287/280125_svac2i.jpg",
-        date: "28/01/2025",
+        date: "29/01/2025",
       },
       {
         src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765552790/300125_iidi5o.jpg",
