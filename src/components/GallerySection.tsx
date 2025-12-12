@@ -128,7 +128,7 @@ export function GallerySection({ images }: GallerySectionProps) {
                     />
 
                     {/* Heart sticker on some photos */}
-                    {index % 4 === 0 && (
+                    {index % 3 === 0 && (
                       <div className="absolute top-2 right-2 w-6 h-6 bg-[var(--red-thread)] rounded-full flex items-center justify-center shadow-md">
                         <svg
                           width="12"
@@ -143,11 +143,11 @@ export function GallerySection({ images }: GallerySectionProps) {
                   </div>
 
                   {/* Date on border */}
-                  {/* {image.date && (
+                  {image.date && (
                     <div className="mt-2 font-ephesis text-lg text-center text-gray-600">
                       {image.date}
                     </div>
-                  )} */}
+                  )}
                 </div>
 
                 {/* Hover indicator */}

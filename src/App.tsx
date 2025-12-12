@@ -53,33 +53,49 @@ export default function App() {
     },
     gallery: [
       {
-        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765386977/album1_issvmy.jpg",
-        date: "01/2023",
+        src: "../asset/album_030523.jpg",
+        date: "03/05/2023",
       },
       {
-        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765386978/album2_eetkki.jpg",
-        date: "03/2023",
+        src: "../asset/220923.jpg",
+        date: "22/09/2023",
       },
       {
-        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765386978/album3_akvbr3.jpg",
+        src: "../asset/071223.jpg",
+        date: "07/12/2023",
       },
       {
-        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765386978/album4_cj0q3i.jpg",
-        date: "05/2023",
+        src: "../asset/album_090224.jpg",
+        date: "09/02/2024",
       },
       {
-        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765386978/album5_d4l8o5.jpg",
+        src: "../asset/080324.jpg",
+        date: "08/03/2024",
       },
       {
-        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765386978/album6_yngels.jpg",
-        date: "07/2023",
+        src: "../asset/190524.jpg",
+        date: "19/05/2024",
       },
       {
-        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765386978/album7_xv5tco.jpg",
+        src: "../asset/290724.jpg",
+        date: "29/07/2024",
       },
       {
-        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765386979/album8_qunna5.jpg",
-        date: "08/2023",
+        src: "../asset/280125.jpg",
+        date: "28/01/2025",
+      },
+      {
+        src: "../asset/1401525.jpg",
+        date: "14/05/2025",
+      },
+
+      {
+        src: "../asset/280925.jpg",
+        date: "28/09/2025",
+      },
+      {
+        src: "../asset/281225.jpg",
+        date: "28/12/2025",
       },
     ],
   };
