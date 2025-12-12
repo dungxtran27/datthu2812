@@ -31,7 +31,7 @@ export default function App() {
       quote: "Yêu là biết trân trọng từng khoảnh khắc bên nhau.",
     },
     heroImage:
-      "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765386979/hero_gtgfrp.jpg",
+      "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765552687/h2_wdbp2q.jpg",
     locations: {
       groom: {
         title: "Tiệc Cưới Nhà Trai",
@@ -83,6 +83,10 @@ export default function App() {
       {
         src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551287/280125_svac2i.jpg",
         date: "28/01/2025",
+      },
+      {
+        src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765552790/300125_iidi5o.jpg",
+        date: "30/01/2025",
       },
       {
         src: "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765551286/1401525_fqnqkt.jpg",

@@ -176,32 +176,6 @@ export function HeroSection({
         ))}
       </div>
 
-      {/* Alternative: Simpler petal animation (uncomment if above is too heavy) */}
-      {/* 
-      <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden">
-        {petals.slice(0, 10).map((petal) => (
-          <div
-            key={petal.id}
-            className="absolute top-0 animate-petal-fall-simple"
-            style={{
-              left: `${petal.x}%`,
-              animationDelay: `${petal.delay}s`,
-              animationDuration: `${petal.duration}s`,
-              transform: `scale(${petal.size})`,
-            }}
-          >
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-              <path
-                d="M15 2C15 2 10 8 10 15C10 22 15 28 15 28C15 28 20 22 20 15C20 8 15 2 15 2Z"
-                fill="var(--red-thread)"
-                opacity="0.7"
-              />
-            </svg>
-          </div>
-        ))}
-      </div>
-      */}
-
       {/* Names with Red Thread */}
       <div className="absolute inset-0 flex items-end md:items-center justify-center z-10 pb-32 md:pb-0">
         <motion.div
