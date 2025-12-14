@@ -1819,6 +1819,9 @@
     padding-bottom: calc(var(--spacing) * 6);
   }
 
+  .pb-38 {
+    padding-bottom: calc(var(--spacing) * 38);
+  }
   .pb-32 {
     padding-bottom: calc(var(--spacing) * 32);
   }

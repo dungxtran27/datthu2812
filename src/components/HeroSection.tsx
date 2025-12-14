@@ -177,7 +177,7 @@ export function HeroSection({
       </div>
 
       {/* Names with Red Thread */}
-      <div className=" test absolute inset-0 flex items-end md:items-center justify-center z-10 pb-12 md:pb-0">
+      <div className=" absolute inset-0 flex items-end md:items-center justify-center z-10 pb-38 md:pb-0">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
