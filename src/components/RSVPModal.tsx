@@ -6,36 +6,39 @@ import { toast } from "sonner@2.0.3";
 interface RSVPModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onSuccess: () => void; // Add this prop
 }
 
-export function RSVPModal({ isOpen, onClose }: RSVPModalProps) {
+export function RSVPModal({ isOpen, onClose, onSuccess }: RSVPModalProps) {
   const [formData, setFormData] = useState({
     name: "",
     guests: "1",
     attending: "yes",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     // Show loading toast
     const loadingToast = toast.loading("Đang gửi xác nhận...");
+
     try {
-      // Replace with your actual Web App URL from Step 2
       const WEB_APP_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
 
       const response = await fetch(WEB_APP_URL, {
         method: "POST",
-        mode: "no-cors", // Important for Google Apps Script
+        mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          timestamp: new Date().toISOString(),
+        }),
       });
-
-      // Note: With 'no-cors' mode, we can't read the response
-      // But the data should still be sent to Google Sheets
 
       // Dismiss loading toast
       toast.dismiss(loadingToast);
@@ -44,25 +47,29 @@ export function RSVPModal({ isOpen, onClose }: RSVPModalProps) {
       toast.success(
         <div className="font-ephesis text-xl">Cảm ơn {formData.name}! ❤️</div>,
         {
-          description: "Chúng mình rất mong được gặp bạn",
+          description: "Lời chúc của bạn đã được gửi thành công",
           duration: 4000,
         }
       );
 
-      // Reset form and close modal
+      // Reset form
       setFormData({ name: "", guests: "1", attending: "yes", message: "" });
+
+      // Call onSuccess to trigger data refresh
+      onSuccess();
+
+      // Close modal
       onClose();
     } catch (error) {
-      // Dismiss loading toast
       toast.dismiss(loadingToast);
-
-      // Show error message
       toast.error("Có lỗi xảy ra", {
         description:
           "Vui lòng thử lại sau hoặc liên hệ trực tiếp với chúng mình.",
         duration: 4000,
       });
       console.error("Submission error:", error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 

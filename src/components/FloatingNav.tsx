@@ -1,6 +1,6 @@
-import { motion } from 'motion/react';
-import { MapPin, Camera, Heart, Gift } from 'lucide-react';
-import { useState } from 'react';
+import { motion } from "motion/react";
+import { MapPin, Camera, Heart, Gift } from "lucide-react";
+import { useState } from "react";
 
 interface FloatingNavProps {
   onRSVPClick: () => void;
@@ -8,21 +8,45 @@ interface FloatingNavProps {
 }
 
 export function FloatingNav({ onRSVPClick, onGiftClick }: FloatingNavProps) {
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState("");
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
       setActiveSection(sectionId);
     }
   };
 
   const navItems = [
-    { icon: MapPin, label: 'Địa điểm', action: () => scrollToSection('locations'), section: 'locations' },
-    { icon: Camera, label: 'Album', action: () => scrollToSection('gallery'), section: 'gallery' },
-    { icon: Heart, label: 'RSVP', action: onRSVPClick, section: 'rsvp' },
-    { icon: Gift, label: 'Mừng cưới', action: onGiftClick, section: 'gift' },
+    {
+      icon: MapPin,
+      label: "Địa điểm",
+      labelMobile: "Địa điểm",
+      action: () => scrollToSection("locations"),
+      section: "locations",
+    },
+    {
+      icon: Camera,
+      label: "Album",
+      labelMobile: "Album",
+      action: () => scrollToSection("gallery"),
+      section: "gallery",
+    },
+    {
+      icon: Heart,
+      label: "Xác nhận tham dự",
+      labelMobile: "Xác nhận",
+      action: onRSVPClick,
+      section: "rsvp",
+    },
+    {
+      icon: Gift,
+      label: "Mừng cưới",
+      labelMobile: "Mừng cưới",
+      action: onGiftClick,
+      section: "gift",
+    },
   ];
 
   return (
@@ -32,7 +56,7 @@ export function FloatingNav({ onRSVPClick, onGiftClick }: FloatingNavProps) {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.5 }}
-        className="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-lg"
+        className="md:hidden fixed bottom-0 left-0 right-0 z-90 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-lg"
       >
         {/* Red Thread Top Border */}
         <div className="absolute top-0 left-0 right-0 h-0.5 bg-[var(--red-thread)]" />
@@ -48,8 +72,8 @@ export function FloatingNav({ onRSVPClick, onGiftClick }: FloatingNavProps) {
               transition={{ delay: 1.5 + index * 0.1, duration: 0.3 }}
               className={`flex flex-col items-center gap-1 p-3 rounded-lg transition-colors ${
                 activeSection === item.section
-                  ? 'text-[var(--red-thread)]'
-                  : 'text-gray-600 hover:text-[var(--red-thread)]'
+                  ? "text-[var(--red-thread)]"
+                  : "text-gray-600 hover:text-[var(--red-thread)]"
               }`}
             >
               <div className="relative">
@@ -62,7 +86,7 @@ export function FloatingNav({ onRSVPClick, onGiftClick }: FloatingNavProps) {
                   />
                 )}
               </div>
-              <span className="text-xs">{item.label}</span>
+              <span className="text-xs">{item.labelMobile}</span>
             </motion.button>
           ))}
         </div>
@@ -95,8 +119,8 @@ export function FloatingNav({ onRSVPClick, onGiftClick }: FloatingNavProps) {
                 <div
                   className={`w-10 h-10 rounded-full flex items-center justify-center transition-all shadow-md ${
                     activeSection === item.section
-                      ? 'bg-[var(--red-thread)] text-white scale-110'
-                      : 'bg-white text-gray-600 hover:bg-[var(--red-thread-light)] hover:text-[var(--red-thread)]'
+                      ? "bg-[var(--red-thread)] text-white scale-110"
+                      : "bg-white text-gray-600 hover:bg-[var(--red-thread-light)] hover:text-[var(--red-thread)]"
                   }`}
                 >
                   <item.icon className="w-5 h-5" />

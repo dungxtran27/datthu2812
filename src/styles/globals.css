@@ -331,3 +331,4 @@ html {
 .animate-petal-fall-simple {
   animation: petal-fall-simple linear infinite;
 }
+/* `.board` sizing is handled via Tailwind classes in the component */
