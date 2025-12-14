@@ -184,6 +184,26 @@ export function HeroSection({
           transition={{ delay: 0.8, duration: 1 }}
           className="relative text-center px-8"
         >
+          {/* Red Thread Line Above */}
+          {/* <svg
+            className="absolute -top-20 left-1/2 -translate-x-1/2 hidden md:block"
+            width="2"
+            height="80"
+            viewBox="0 0 2 80"
+          >
+            <motion.line
+              x1="1"
+              y1="0"
+              x2="1"
+              y2="80"
+              stroke="var(--red-thread)"
+              strokeWidth="2"
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{ delay: 1.5, duration: 1.5, ease: "easeInOut" }}
+            />
+          </svg> */}
+
           <div className="relative bg-white/95 backdrop-blur-sm px-8 md:px-12 py-6 md:py-8 rounded-lg shadow-2xl">
             <div className="relative">
               <motion.div
@@ -209,6 +229,26 @@ export function HeroSection({
               </div>
             </div>
           </div>
+
+          {/* Bottom Thread */}
+          {/* <svg
+            className="absolute -bottom-20 left-1/2 -translate-x-1/2 hidden md:block"
+            width="2"
+            height="80"
+            viewBox="0 0 2 80"
+          >
+            <motion.line
+              x1="1"
+              y1="0"
+              x2="1"
+              y2="80"
+              stroke="var(--red-thread)"
+              strokeWidth="2"
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{ delay: 1.5, duration: 1.5, ease: "easeInOut" }}
+            />
+          </svg> */}
         </motion.div>
       </div>
 

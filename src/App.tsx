@@ -47,7 +47,7 @@ const WEDDING_DATA = {
     quote: "Yêu là biết trân trọng từng khoảnh khắc bên nhau.",
   },
   heroImage:
-    "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765713905/hero_v3_j32mbx.jpg",
+    "https://res.cloudinary.com/dqxtjesjz/image/upload/v1765552687/h2_wdbp2q.jpg",
   locations: {
     groom: {
       title: "Tiệc Cưới Nhà Trai",
