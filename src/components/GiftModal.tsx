@@ -22,10 +22,10 @@ export function GiftModal({ isOpen, onClose }: GiftModalProps) {
 
   // Example bank accounts - replace with real data
   const groomAccount: BankAccount = {
-    bank: "Ngân hàng TMCP Sài Gòn",
-    accountNumber: "030081131429",
+    bank: "Ngân hàng TMCP Quân đội",
+    accountNumber: "0348069863",
     accountName: "BUI TIEN DAT",
-    code: "SCB",
+    code: "MB",
   };
 
   const brideAccount: BankAccount = {
@@ -191,18 +191,7 @@ export function GiftModal({ isOpen, onClose }: GiftModalProps) {
                   <p className="text-gray-600">
                     Tình cảm của bạn là món quà quý giá nhất với chúng mình
                   </p>
-                  <div className="flex items-center justify-center gap-2 mt-4">
-                    {[...Array(5)].map((_, i) => (
-                      <div
-                        key={i}
-                        className="w-1.5 h-1.5 rounded-full"
-                        style={{
-                          backgroundColor:
-                            i === 2 ? "var(--red-thread)" : "#e5e7eb",
-                        }}
-                      />
-                    ))}
-                  </div>
+                 
                 </div>
               </div>
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
@@ -202,9 +202,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Ephesis font class */
-.font-ephesis {
-  font-family: "Ephesis", cursive;
+/* great font class */
+.font-great {
+  font-family: "Great Vibes", cursive;
 }
 
 /* Custom animations */

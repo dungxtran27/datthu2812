@@ -47,8 +47,8 @@ export function LocationSection({
           <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[var(--red-thread)] via-red-400 to-[var(--red-thread)]" />
 
           <div className="p-8 md:p-10">
-            {/* Title in Ephesis */}
-            <h3 className="font-ephesis text-4xl md:text-5xl text-[var(--red-thread)] mb-2 text-center">
+            {/* Title in great */}
+            <h3 className="font-great text-4xl md:text-5xl text-[var(--red-thread)] mb-2 text-center">
               {location.title}
             </h3>
 
@@ -135,7 +135,7 @@ export function LocationSection({
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="font-ephesis text-5xl md:text-6xl text-[var(--red-thread)] mb-4">
+          <h2 className="font-great text-5xl md:text-6xl text-[var(--red-thread)] mb-4">
             Thông tin tiệc cưới
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">

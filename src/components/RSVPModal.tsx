@@ -45,7 +45,7 @@ export function RSVPModal({ isOpen, onClose, onSuccess }: RSVPModalProps) {
 
       // Show success message
       toast.success(
-        <div className="font-ephesis text-xl">Cảm ơn {formData.name}! ❤️</div>,
+        <div className="font-great text-xl">Cảm ơn {formData.name}! ❤️</div>,
         {
           description: "Lời chúc của bạn đã được gửi thành công",
           duration: 4000,
@@ -107,7 +107,7 @@ export function RSVPModal({ isOpen, onClose, onSuccess }: RSVPModalProps) {
                   <X className="w-5 h-5" />
                 </motion.button>
 
-                <h3 className="font-ephesis text-4xl mb-2">Xác nhận tham dự</h3>
+                <h3 className="font-great text-4xl mb-2">Xác nhận tham dự</h3>
                 <p className="text-white/90 text-sm">
                   Vui lòng cho chúng mình biết bạn có thể đến không nhé
                 </p>

@@ -1,6 +1,6 @@
-import { motion } from 'motion/react';
-import { useInView } from 'motion/react';
-import { useRef } from 'react';
+import { motion } from "motion/react";
+import { useInView } from "motion/react";
+import { useRef } from "react";
 
 interface CoupleSectionProps {
   groomImage: string;
@@ -23,9 +23,15 @@ export function CoupleSection({
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-    <section ref={ref} className="py-24 px-6 md:px-12 bg-[var(--golden-hour)] relative overflow-hidden">
+    <section
+      ref={ref}
+      className="py-24 px-6 md:px-12 bg-[var(--golden-hour)] relative overflow-hidden"
+    >
       {/* Red Thread Background */}
-      <svg className="absolute top-1/2 left-0 w-full h-1 -translate-y-1/2" viewBox="0 0 1000 2">
+      <svg
+        className="absolute top-1/2 left-0 w-full h-1 -translate-y-1/2"
+        viewBox="0 0 1000 2"
+      >
         <motion.line
           x1="0"
           y1="1"
@@ -47,7 +53,7 @@ export function CoupleSection({
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="font-ephesis text-5xl md:text-6xl text-[var(--red-thread)] mb-4">
+          <h2 className="font-great text-5xl md:text-6xl text-[var(--red-thread)] mb-4">
             Tình yêu với chúng mình là
           </h2>
           <div className="w-24 h-0.5 bg-[var(--red-thread)] mx-auto" />
@@ -63,18 +69,16 @@ export function CoupleSection({
           >
             {/* Polaroid Frame */}
             <div className="relative bg-white p-4 shadow-[0_8px_30px_var(--paper-shadow)] rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
-              <motion.div
-                className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden animate-polaroid film-grain"
-              >
+              <motion.div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden animate-polaroid film-grain">
                 <img
                   src={groomImage}
                   alt={groomName}
                   className="w-full h-full object-cover"
                 />
               </motion.div>
-              
+
               {/* Polaroid Caption */}
-              <div className="mt-4 font-ephesis text-2xl text-center text-gray-700">
+              <div className="mt-4 font-great text-2xl text-center text-gray-700">
                 {groomName}
               </div>
 
@@ -119,7 +123,7 @@ export function CoupleSection({
             <div className="relative bg-white p-4 shadow-[0_8px_30px_var(--paper-shadow)] rotate-[2deg] hover:rotate-0 transition-transform duration-500">
               <motion.div
                 className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden animate-polaroid film-grain"
-                style={{ animationDelay: '0.3s' }}
+                style={{ animationDelay: "0.3s" }}
               >
                 <img
                   src={brideImage}
@@ -127,9 +131,9 @@ export function CoupleSection({
                   className="w-full h-full object-cover"
                 />
               </motion.div>
-              
+
               {/* Polaroid Caption */}
-              <div className="mt-4 font-ephesis text-2xl text-center text-gray-700">
+              <div className="mt-4 font-great text-2xl text-center text-gray-700">
                 {brideName}
               </div>
 

@@ -117,7 +117,7 @@ export function MessagesSection({
         transition={{ duration: 0.8 }}
         className="text-center mb-12 relative z-10"
       >
-        <h2 className="font-ephesis text-5xl md:text-6xl text-[var(--red-thread)] mb-3">
+        <h2 className="font-great text-5xl md:text-6xl text-[var(--red-thread)] mb-3">
           Lời Chúc Từ Mọi Người
         </h2>
         <div className="flex items-center justify-center gap-3">

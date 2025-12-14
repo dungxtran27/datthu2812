@@ -49,7 +49,7 @@ export function GallerySection({ images }: GallerySectionProps) {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <h2 className="font-ephesis text-5xl md:text-6xl text-[var(--red-thread)] mb-4">
+          <h2 className="font-great text-5xl md:text-6xl text-[var(--red-thread)] mb-4">
             Khoảnh khắc của chúng mình
           </h2>
           <p className="text-gray-600">Những kỷ niệm đẹp được lưu giữ</p>
@@ -144,7 +144,7 @@ export function GallerySection({ images }: GallerySectionProps) {
 
                   {/* Date on border */}
                   {image.date && (
-                    <div className="mt-2 font-ephesis text-lg text-center text-gray-600">
+                    <div className="mt-2 font-great text-lg text-center text-gray-600">
                       {image.date}
                     </div>
                   )}

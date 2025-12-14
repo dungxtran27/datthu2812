@@ -73,13 +73,14 @@ export function Footer({ groomName, brideName }: FooterProps) {
         transition={{ delay: 0.5, duration: 0.8 }}
         className="text-center mb-8"
       >
-        <p className="font-ephesis text-4xl md:text-5xl text-[var(--red-thread)] mb-4">
+        <p className="font-great text-4xl md:text-5xl text-[var(--red-thread)] mb-4">
           Hẹn gặp lại ngày vui của chúng mình ❤️
         </p>
         <div className="flex items-center justify-center gap-2">
           <div className="h-px w-12 bg-[var(--red-thread)]/30" />
           <p className="text-gray-600">
-            {groomName} & {brideName}
+            {groomName}  &#10084;
+            {brideName}
           </p>
           <div className="h-px w-12 bg-[var(--red-thread)]/30" />
         </div>
